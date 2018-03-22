@@ -3,23 +3,58 @@
 import os
 import sys
 
-args = sys.argv[1:]
-
 dict = {
-    "SYSTEM": "uname -srvmpio",
-    "awk": "awk --version | head -1",
-    "cc": "cc --version | head -1",
-    "grep": "grep --version | head -1",
-    "groff": "groff --version | head -1",
-    "latex": "latex --version | grep 'Compiled with\\|3.14\\|version'",
-    "tex": "tex --version | head -2"
+
+  # Add new ones below. Don't forget the comma at the end of each
+  # line, and please alphabetize them.
+  
+  "SYSTEM": "uname -srvmpio",
+  "awk": "awk --version | head -1",
+  "bash": "bash --version | head -1",
+  "cat": "cat --version | head -1",
+  "cc": "cc --version | head -1",
+  "gnuplot": "gnuplot --version",
+  "grep": "grep --version | head -1",
+  "groff": "groff --version | head -1",
+  "head": "head --version | head -1",
+  "latex": "latex --version | grep 'Compiled with\\|3.14\\|version'",
+  "pic": "pic --version",
+  "python": "python --version",
+  "python3": "python3 --version",
+  "sed": "sed --version | head -1",
+  "tail": "tail --version | head -1",
+  "tex": "tex --version | head -1",
+  "wc": "wc --version | head -1",
+  "whatver": "whatver --version",
 }
 
-for p in args:
-    if p in dict:
-        os.system(dict[p])
-    else:
-        print("\"", p, "\" not in program list.", sep="")
-        break
-    
 
+def use_msg():
+  print ("USE: whatver program [otherprograms ... ]")
+
+def help_msg():
+  use_msg()
+  print ("HELP: whatver -h")
+  print ("VERSION: whatver -v")
+  
+if len(sys.argv) > 1:
+  args = sys.argv[1:]
+else:
+  use_msg()
+  sys.exit()
+
+if args[0] in ("-h", "-H", "--help", "-help", "-?"):
+  help_msg()
+  sys.exit()
+
+if args[0] in ("--version", "-v", "-V", "-version"):
+  print("whatver version 1")
+  sys.exit()
+
+for p in args:
+  if p in dict:
+    print(" - ", end='', flush=True)
+    os.system(dict[p])
+  else:
+    print("\"", p, "\" not in program list.", sep="")
+    break
