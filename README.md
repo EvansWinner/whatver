@@ -19,7 +19,7 @@ An example use:
 The purpose of this is to use with my gutter-punk plain-text, command
 line "notebook" processor (something like a plain text version of
 something like Rmarkdown notebooks or Jupyter)
-[Kallychore](https://github.com/EvansWinner/kallychore].
+[Kallychore](https://github.com/EvansWinner/kallychore).
 
 Not much else to say, really. I am adding to it as I need things, so
 if you add something, please sent me a pull request... whatever that
