@@ -27,7 +27,7 @@ is.
 
 I use the Makefile by running 
 
-  $ sudo make install
+    $ sudo make install
   
 in order not to have to prefix calls to whatver with dot-slash. You
 can do that if you want. It's hard-coded to install to
