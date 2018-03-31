@@ -15,6 +15,9 @@ dict = {
   "bash": "bash --version | head -1 2>&1",
   "cat": "cat --version | head -1 2>&1",
   "cc": "cc --version | head -1 2>&1",
+  "comm": "comm --version | head -1 2>&1",
+  "factor": "factor --version | head -1 2>&1",
+  "gcc": "gcc --version | head -1 2>&1",
   "gnuplot": "gnuplot --version 2>&1",
   "graph-easy": "graph-easy --version | grep 'Graph::Easy'",
   "grep": "grep --version | head -1 2>&1",
@@ -22,6 +25,7 @@ dict = {
   "head": "head --version | head -1 2>&1",
   "kallychore": "kallychore -v 2>&1",
   "latex": "latex --version | grep 'Compiled with\\|3.14\\|version' 2>&1",
+  "pandoc": "pandoc --version | head -1 2>&1",
   "perl": "perl --version | grep -o 'perl .,.*'",
   "pic": "pic --version 2>&1",
   "python": "python --version 2>&1",
@@ -29,6 +33,7 @@ dict = {
   "sed": "sed --version | head -1 2>&1",
   "tail": "tail --version | head -1 2>&1",
   "tex": "tex --version | head -1 2>&1",
+  "tr": "tr --version | head -1 2>&1",
   "wc": "wc --version | head -1 2>&1",
   "whatver": "whatver --version 2>&1",
 }
@@ -58,7 +63,7 @@ if args[0] in ("--version", "-v", "-V", "-version"):
 
 for p in args:
   if p in dict:
-    print(" - ", end='', flush=True)
+    print(end='', flush=True)
     os.system(dict[p])
   else:
     print("whatver: ", "\"", p, "\" not in program list.", sep="")
