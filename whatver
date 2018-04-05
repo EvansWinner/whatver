@@ -19,6 +19,7 @@ dict = {
   "comm": "comm --version | head -1 2>&1",
   "emacs": "emacs --version | head -1 2>&1",
   "factor": "factor --version | head -1 2>&1",
+  "fmt": "fmt --version | head -1 2>&1",
   "fold": "fold --version | head -1 2>&1",
   "gcc": "gcc --version | head -1 2>&1",
   "gnuplot": "gnuplot --version 2>&1",
