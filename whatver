@@ -13,6 +13,7 @@ dict = {
   "SYSTEM": "uname -srvmpio",
   "awk": "awk --version | head -1  2>&1",
   "bash": "bash --version | head -1 2>&1",
+  "bc": "bc --version | head -1 2>&1",
   "cat": "cat --version | head -1 2>&1",
   "cc": "cc --version | head -1 2>&1",
   "cmp": "cmp --version | head -1 2>&1",
