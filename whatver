@@ -39,6 +39,7 @@ dict = {
   "sort": "sort --version | head -1 2>&1",
   "tail": "tail --version | head -1 2>&1",
   "tex": "tex --version | head -1 2>&1",
+  "touch": "touch --version | head -1 2>&1",
   "tr": "tr --version | head -1 2>&1",
   "uniq": "uniq --version | head -1 2>&1",
   "wc": "wc --version | head -1 2>&1",
