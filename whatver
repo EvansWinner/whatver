@@ -5,7 +5,7 @@ import sys
 
 # This is updated automatically by git pre-commit hook to be the
 # current git revision number.
-version="18"
+version="19"
 
 dict = {
 
@@ -70,7 +70,7 @@ if args[0] in ("-h", "-H", "--help", "-help", "-?"):
   sys.exit()
 
 if args[0] in ("--version", "-v", "-V", "-version"):
-  print("whatver", version)
+  print("whatver version (git revision)", version)
   sys.exit()
 
 for p in args:
