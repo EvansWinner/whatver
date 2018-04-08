@@ -2,7 +2,10 @@
 
 import os
 import sys
-version="16"
+
+# This is updated automatically by git pre-commit hook to be the
+# current git revision number.
+version="17"
 
 dict = {
 
