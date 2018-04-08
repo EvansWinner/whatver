@@ -5,7 +5,7 @@ import sys
 
 # This is updated automatically by git pre-commit hook to be the
 # current git revision number.
-version="17"
+version="18"
 
 dict = {
 
@@ -32,6 +32,7 @@ dict = {
   "head": "head --version | head -1 2>&1",
   "kallychore": "kallychore -v 2>&1",
   "latex": "latex --version | grep 'Compiled with\\|3.14\\|version' 2>&1",
+  "make": "make --version | head -1 2>&1",
   "pandoc": "pandoc --version | head -1 2>&1",
   "perl": "perl --version | grep -o 'perl .,.*'",
   "pic": "pic --version 2>&1",
