@@ -51,10 +51,12 @@ dictionary = {
 
 
 def use_msg():
+    """Print a brief usage message."""
     print("Usage: whatver program [otherprograms ... ]")
 
 
 def help_msg():
+    """Print a brief help message."""
     use_msg()
     print("Help: whatver -h")
     print("Version: whatver -v")
