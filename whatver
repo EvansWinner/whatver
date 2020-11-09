@@ -6,7 +6,7 @@ import sys
 
 # This is updated automatically by git pre-commit hook to be the
 # current git revision number.
-version = "19"
+VERSION = "19"
 
 dictionary = {
     # Add new ones below. Don't forget the comma at the end of each
