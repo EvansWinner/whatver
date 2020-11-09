@@ -8,7 +8,7 @@ import sys
 # current git revision number.
 version = "19"
 
-dict = {
+dictionary = {
     # Add new ones below. Don't forget the comma at the end of each
     # line, and please alphabetize them.
     "SYSTEM": "uname -srvmpio",
@@ -75,9 +75,9 @@ if args[0] in ("--version", "-v", "-V", "-version"):
     sys.exit()
 
 for p in args:
-    if p in dict:
+    if p in dictionary:
         print(end="", flush=True)
-        os.system(dict[p])
+        os.system(dictionary[p])
     else:
         print("whatver: ", '"', p, '" not in program list.', sep="")
         break
