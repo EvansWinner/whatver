@@ -71,7 +71,7 @@ if args[0] in ("-h", "-H", "--help", "-help", "-?"):
     sys.exit()
 
 if args[0] in ("--version", "-v", "-V", "-version"):
-    print("whatver version (git revision)", version)
+    print("whatver version (git revision)", VERSION)
     sys.exit()
 
 for p in args:
