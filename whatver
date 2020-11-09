@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""A database of calls to command line programs for getting their version number."""
 
 import os
 import sys
